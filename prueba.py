@@ -1,7 +1,5 @@
 #EJERCICIO 6
-"""
-
-#The sum of the squares of the first ten natural numbers is,
+"""#The sum of the squares of the first ten natural numbers is,
 #  1**2 + 2**2 + ... + 10**2 = 385.
 
 suma_cuadrados = sum(x**2 for x in range(1, 11))
@@ -39,8 +37,7 @@ print(f"La diferencia entre el cuadrado de la suma y la suma de los cuadrados es
 """
 
 #EJERCICIO 7 - Encontrar el n-ésimo primo
-"""
-    Puntos Importantes del Ejercicio:
+"""    Puntos Importantes del Ejercicio:
 
     Definición del Problema: Encontrar el 10,001er número primo.
     Secuencia de Primos Iniciales: Los primeros seis primos son 2,3,5,7,11 y 13. 13 es el sexto primo
@@ -91,21 +88,21 @@ primo_6 = encuentra_enesimo_primo(6)
 print(f"El sexto número primo es: {primo_6}")
 """
 
-#EJERCICIO 8 - El número de 1000 d�gitos como una sola cadena
-def encuentraElMaxProducto(numero, digitos_adyacentes):
+#EJERCICIO 8 - El número de 1000 dígitos como una sola cadena
+"""def encuentraElMaxProducto(numero, digitos_adyacentes):
     # Convertir la cadena en una lista de enteros
     digitos = [int(char) for char in numero]
     
     max_producto = 0
     
-    # Iterar sobre todos los posibles segmentos de `adjacent_digits` dígitos
+    # Iterar sobre todos los posibles segmentos de `digitos_adyacentes` dígitos
     for i in range(len(digitos) - digitos_adyacentes + 1):
-        # Obtener los `adjacent_digits` dígitos actuales
+        # Obtener los `digitos_adyacentes` dígitos actuales
         segmento = digitos[i:i + digitos_adyacentes]
         # Calcular el producto de estos `adjacent_digits` dígitos
         producto = 1
-        for digit in segmento:
-            producto *= digit
+        for digito in segmento:
+            producto *= digito
         # Actualizar el máximo producto si es necesario
         if producto > max_producto:
             max_producto = producto
@@ -142,4 +139,6 @@ print(maxProducto)
 
 
 maxProducto1 = encuentraElMaxProducto(numero, 4)
-print(maxProducto1)
+print(maxProducto1)"""
+
+#EJERCICIO 9 - 
